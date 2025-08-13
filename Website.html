@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data Analytics Portfolio</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --bg-light: #f9f9f9;
+            --white: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Section Titles */
+        h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        /* Dashboard Containers */
+        .dashboard-container {
+            margin: 30px 0;
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .dashboard-container:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            display: block;
+        }
+
+        /* Project Description */
+        section p {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            iframe {
+                height: 400px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Data Analytics Portfolio</h1>
+        <p>Showcasing my Tableau Dashboards & Insights</p>
+    </header>
+    
+    <div class="container">
+
+        <!-- Public Transport Dashboard -->
+        <div class="dashboard-container">
+            <h2>Singapore Public Transport Dashboard</h2>
+            <iframe src="https://public.tableau.com/views/sg-public-transport-dashboard/Dashboard?:embed=y&:display_count=yes&:showVizHome=no" width="100%" 
+  height="1000" 
+  style="border:none;" 
+  allowfullscreen></iframe>
+        </div>
+        <section>
+            <p>Created a dashboard to analyze MRT and bus ridership trends across Singapore using public LTA data. Built filters by station, year, and transport mode, allowing stakeholders to view underused and peak locations. Presented insights on commuter behavior, seasonal ridership patterns, and transport planning opportunities.</p>
+        </section>
+
+        <!-- Housing Price Dashboard -->
+        <div class="dashboard-container">
+            <h2>Housing Price Dashboard</h2>
+            <iframe src="https://public.tableau.com/views/HousingPriceanalysis_17511672972900/HDBFlatReview?:embed=y&:display_count=yes&:showVizHome=no" width="100%" 
+  height="1000" 
+  style="border:none;" 
+  allowfullscreen></iframe>
+        </div>
+        <section>
+            <p>Cleaned and transformed data from Singapore’s public datasets using Excel and Tableau Prep. Designed an interactive Tableau dashboard visualizing HDB resale flat prices across towns, flat types, and years. Enabled filters for town, flat type, and year, helping users identify price trends and high-demand areas.</p>
+        </section>
+
+        <!-- Restaurant Dashboard -->
+        <div class="dashboard-container">
+            <h2>Restaurant Dashboard</h2>
+            <iframe src="https://public.tableau.com/views/Dashboard_17548758027830/RestaurantDashboard?:embed=y&:display_count=yes&:showVizHome=no" width="100%" 
+  height="1000" 
+  style="border:none;" 
+  allowfullscreen></iframe>
+        </div>
+        <section>
+            <p>This report analyzes the annual sales performance, highlighting trends by month, day, product, and hour. The insights help identify the strongest revenue drivers and pinpoint opportunities for improvement and targeted growth.</p>
+        </section>
+
+    </div>
+    
+    <footer>
+        <p>© 2025 Balamurugan | Data Analyst</p>
+    </footer>
+
+</body>
+</html>
